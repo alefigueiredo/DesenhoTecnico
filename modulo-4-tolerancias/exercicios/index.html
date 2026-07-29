@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Exercícios: Tolerâncias e Acabamento — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Módulo 4: Tolerâncias e Acabamento</p>
+        </div>
+        <div class="sidebar-progress">
+            <div class="progress-label"><span>Progresso</span><span id="navProgressText">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="navProgressFill"></div></div>
+        </div>
+        <ul class="nav-list" id="navList">
+            <li class="nav-module open">
+                <button class="nav-module-btn" data-module="mod-04">
+                    <span class="nav-icon">📏</span>
+                    <span>Módulo 4: Tolerâncias</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-tolerancias-dimensionais/index.html" class="nav-link">SA1: Tolerâncias Dimensionais</a></li>
+                    <li><a href="../sa2-tolerancias-geometricas/index.html" class="nav-link">SA2: Tolerâncias Geométricas</a></li>
+                    <li><a href="../sa3-acabamento-superficial/index.html" class="nav-link">SA3: Acabamento Superficial</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link active">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer"><p class="sidebar-footer-text">SENAI SP — Material Digital</p></div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 4: Tolerâncias</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Exercícios</span>
+        </div>
+
+        <div class="content-area">
+            <section class="content-section active">
+                <h1>Exercícios de Fixação — Módulo 4: Tolerâncias e Acabamento</h1>
+                <p>Responda às questões abaixo para testar seus conhecimentos em tolerâncias dimensionais, geométricas e acabamento superficial conforme as normas ABNT/ISO.</p>
+
+                <!-- Exercício 1 -->
+                <div class="exercise" id="ex-m4-1">
+                    <p class="exercise-text">1. Uma peça cilíndrica apresenta a cota de <strong>∅ 50 +0,03 / -0,01 mm</strong>. Quais são as dimensões máxima e mínima permitidas para a fabricação desta peça?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="ex-m4-1" value="a"><span class="option-letter">A</span><span>Dimensão Máxima = 50,03 mm | Dimensão Mínima = 49,99 mm</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-1" value="b"><span class="option-letter">B</span><span>Dimensão Máxima = 50,30 mm | Dimensão Mínima = 49,90 mm</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-1" value="c"><span class="option-letter">C</span><span>Dimensão Máxima = 50,00 mm | Dimensão Mínima = 49,97 mm</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-1" value="d"><span class="option-letter">D</span><span>Dimensão Máxima = 50,03 mm | Dimensão Mínima = 50,01 mm</span></label>
+                    </div>
+                    <button class="btn btn-primary btn-check" data-exercise="ex-m4-1" data-answer="a">Verificar Resposta</button>
+                    <div class="feedback" id="feedback-ex-m4-1"></div>
+                </div>
+
+                <!-- Exercício 2 -->
+                <div class="exercise" id="ex-m4-2">
+                    <p class="exercise-text">2. O que representa o código de tolerância ISO <strong>H7/g6</strong> aplicado ao conjunto eixo-furo?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="ex-m4-2" value="a"><span class="option-letter">A</span><span>Um ajuste com folga, onde H7 é a tolerância do furo e g6 a tolerância do eixo.</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-2" value="b"><span class="option-letter">B</span><span>Um ajuste com interferência forçada sob prensa mecânica.</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-2" value="c"><span class="option-letter">C</span><span>Uma tolerância de batimento circular em eixos roletados.</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-2" value="d"><span class="option-letter">D</span><span>Uma indicação de rugosidade Ra = 7 µm para o furo e Ra = 6 µm para o eixo.</span></label>
+                    </div>
+                    <button class="btn btn-primary btn-check" data-exercise="ex-m4-2" data-answer="a">Verificar Resposta</button>
+                    <div class="feedback" id="feedback-ex-m4-2"></div>
+                </div>
+
+                <!-- Exercício 3 -->
+                <div class="exercise" id="ex-m4-3">
+                    <p class="exercise-text">3. No quadro de tolerância geométrica, o símbolo formado por duas linhas paralelas inclinadas (<strong>//</strong>) representa qual característica?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="ex-m4-3" value="a"><span class="option-letter">A</span><span>Perpendicularidade</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-3" value="b"><span class="option-letter">B</span><span>Paralelismo (Tolerância de Orientação)</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-3" value="c"><span class="option-letter">C</span><span>Concentricidade</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-3" value="d"><span class="option-letter">D</span><span>Cilindricidade</span></label>
+                    </div>
+                    <button class="btn btn-primary btn-check" data-exercise="ex-m4-3" data-answer="b">Verificar Resposta</button>
+                    <div class="feedback" id="feedback-ex-m4-3"></div>
+                </div>
+
+                <!-- Exercício 4 -->
+                <div class="exercise" id="ex-m4-4">
+                    <p class="exercise-text">4. Qual é a classe de rugosidade equivalente a um valor de rugosidade média aritmética <strong>Ra = 1,6 µm</strong>?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="ex-m4-4" value="a"><span class="option-letter">A</span><span>Classe N5</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-4" value="b"><span class="option-letter">B</span><span>Classe N7</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-4" value="c"><span class="option-letter">C</span><span>Classe N9</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-4" value="d"><span class="option-letter">D</span><span>Classe N12</span></label>
+                    </div>
+                    <button class="btn btn-primary btn-check" data-exercise="ex-m4-4" data-answer="b">Verificar Resposta</button>
+                    <div class="feedback" id="feedback-ex-m4-4"></div>
+                </div>
+
+                <!-- Exercício 5 -->
+                <div class="exercise" id="ex-m4-5">
+                    <p class="exercise-text">5. O que indica uma tolerância geométrica de <strong>Batimento Total</strong> indicada no desenho de uma árvore de transmissão?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="ex-m4-5" value="a"><span class="option-letter">A</span><span>Controle simultâneo da forma circular e da concentricidade ao longo de toda a superfície ao girar a peça 360°.</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-5" value="b"><span class="option-letter">B</span><span>Apenas a rugosidade máxima das ranhuras de chaveta.</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-5" value="c"><span class="option-letter">C</span><span>A dureza Rockwell C da superfície temperada.</span></label>
+                        <label class="option"><input type="radio" name="ex-m4-5" value="d"><span class="option-letter">D</span><span>O valor da folga entre os dentes da engrenagem.</span></label>
+                    </div>
+                    <button class="btn btn-primary btn-check" data-exercise="ex-m4-5" data-answer="a">Verificar Resposta</button>
+                    <div class="feedback" id="feedback-ex-m4-5"></div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa3-acabamento-superficial/index.html'">‹ SA3: Acabamento Superficial</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../avaliacao/index.html'">Próximo: Avaliação do Módulo 4 ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 1 - SA2: Diedros e Folhas — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Fundamentos do Desenho Técnico</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-01">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 1: Fundamentos</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-definicao-e-normas/index.html" class="nav-link">SA1: Definição e Normas</a></li>
+                    <li><a href="../sa2-diedros-e-folhas/index.html" class="nav-link active">SA2: Diedros e Folhas</a></li>
+                    <li><a href="../sa3-linhas-e-escalas/index.html" class="nav-link">SA3: Linhas e Escalas</a></li>
+                    <li><a href="../sa4-solidos-geometricos/index.html" class="nav-link">SA4: Sólidos Geométricos</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 1: Fundamentos</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA2: Diedros e Folhas</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-01-sa2">
+                <h1>Situação de Aprendizagem 2: Primeiro e Terceiro Diedro, Formatos e Dimensões das Folhas</h1>
+
+                <div class="content-block">
+                    <h2>2.1 Primeiro Diedro</h2>
+                    <p>No Primeiro Diedro, o observador está localizado no primeiro quadrante, entre o plano frontal e o plano horizontal. As projeções são obtidas projetando o objeto sobre os planos de projeção.</p>
+                    <p>O objeto é considerado "transparente" e as projeções são desenhadas como se o objeto estivesse sendo "achatado" contra os planos de projeção.</p>
+                    
+                    <div class="callout callout-success">
+                        <div class="callout-icon">✅</div>
+                        <div class="callout-content">
+                            <strong>NBR 8403/84:</strong> No Brasil, utiliza-se o Primeiro Diedro conforme estabelecido pelas normas ABNT.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.2 Terceiro Diedro</h2>
+                    <p>No Terceiro Diedro, o objeto é colocado no terceiro quadrante, ou seja, atrás do plano frontal e abaixo do plano horizontal.</p>
+                    <p>Este sistema é utilizado principalmente em países como os Estados Unidos e Reino Unido.</p>
+                    
+                    <div class="callout callout-warning">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-content">
+                            <strong>Diferença Importante:</strong> No Primeiro Diedro, a vista superior é desenhada <em>abaixo</em> da vista frontal. No Terceiro Diedro, a vista superior é desenhada <em>acima</em> da vista frontal.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.3 Formatos e Dimensões das Folhas (NBR 10068)</h2>
+                    <p>As folhas de desenho seguem o sistema ISO 216, com os seguintes formatos principais:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Formato</th>
+                                    <th>Dimensões (mm)</th>
+                                    <th>Dimensões (cm)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>A0</strong></td>
+                                    <td>841 × 1189</td>
+                                    <td>84,1 × 118,9</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>A1</strong></td>
+                                    <td>594 × 841</td>
+                                    <td>59,4 × 84,1</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>A2</strong></td>
+                                    <td>420 × 594</td>
+                                    <td>42,0 × 59,4</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>A3</strong></td>
+                                    <td>297 × 420</td>
+                                    <td>29,7 × 42,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>A4</strong></td>
+                                    <td>210 × 297</td>
+                                    <td>21,0 × 29,7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.4 Legenda do Desenho Técnico</h2>
+                    <p>Toda folha de desenho deve conter uma legenda com as seguintes informações obrigatórias:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nome da peça ou componente</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Material</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Massa</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Escala</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Desenvolvedor</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Data</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Revisor</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Aprovação</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Número do desenho</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Nome da empresa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa1-definicao-e-normas/index.html'">‹ SA1: Definição e Normas</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../sa3-linhas-e-escalas/index.html'">Próximo: SA3 — Linhas e Escalas ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

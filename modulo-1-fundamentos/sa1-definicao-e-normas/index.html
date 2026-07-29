@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 1 - SA1: Definição e Normas Técnicas — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <!-- ===== SIDEBAR / NAVEGAÇÃO ===== -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation" aria-label="Navegação do curso">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Fundamentos do Desenho Técnico</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-01" onclick="this.parentElement.classList.toggle('open')">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 1: Fundamentos</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-definicao-e-normas/index.html" class="nav-link active">SA1: Definição e Normas</a></li>
+                    <li><a href="../sa2-diedros-e-folhas/index.html" class="nav-link">SA2: Diedros e Folhas</a></li>
+                    <li><a href="../sa3-linhas-e-escalas/index.html" class="nav-link">SA3: Linhas e Escalas</a></li>
+                    <li><a href="../sa4-solidos-geometricos/index.html" class="nav-link">SA4: Sólidos Geométricos</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <!-- ===== OVERLAY (mobile) ===== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 1: Fundamentos</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA1: Definição e Normas</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-01-sa1">
+                <h1>Situação de Aprendizagem 1: Definição e Normas Técnicas</h1>
+
+                <div class="content-block">
+                    <h2>1.1 O que é Desenho Técnico?</h2>
+                    <p>O desenho técnico é a linguagem universal da engenharia e da manutenção. Ele é uma forma de representar, com exatidão, a forma, as dimensões e as características de uma peça ou de um sistema mecânico.</p>
+                    <p>Diferente do desenho artístico, que busca expressar sensações e emoções, o desenho técnico tem como objetivo principal comunicar, de maneira clara e precisa, as informações necessárias para a fabricação, inspeção e montagem de componentes.</p>
+                    
+                    <div class="callout callout-info">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-content">
+                            <strong>Diferencial SENAI:</strong> Neste curso, você desenvolverá a capacidade de interpretar desenhos técnicos de acordo com as normas ABNT, garantindo precisão e segurança nos processos industriais.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>1.2 Normas Técnicas (ABNT)</h2>
+                    <p>A ABNT (Associação Brasileira de Normas Técnicas) estabelece as diretrizes para a elaboração de desenhos técnicos no Brasil. As principais normas aplicáveis ao desenho técnico mecânico são:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Norma ABNT</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>NBR 8403</strong></td>
+                                    <td>Aplicação de linhas em desenhos - Tipos de linhas e larguras</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NBR 10067</strong></td>
+                                    <td>Princípios gerais de representação em desenho técnico</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NBR 10126</strong></td>
+                                    <td>Cotagem em desenho técnico</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NBR 10273</strong></td>
+                                    <td>Representação de roscas em desenhos técnicos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NBR 11182</strong></td>
+                                    <td>Convenções de representação de soldas em desenhos técnicos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>1.3 Primeiro Diedro vs Terceiro Diedro</h2>
+                    <p>Existem dois sistemas principais de projeção ortogonal utilizados no mundo:</p>
+                    
+                    <div class="img-container" style="margin: 20px 0; text-align: center;">
+                        <img src="../../assets/fig-diedros.svg" alt="Símbolo ABNT 1º Diedro e Posicionamento de Vistas" style="max-width:100%; height:auto;">
+                    </div>
+
+                    <div class="callout callout-warning">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-content">
+                            <strong>Importante:</strong> No Brasil, utiliza-se o <strong>Primeiro Diedro</strong>, conforme estabelecido pelas normas ABNT. Em países como os Estados Unidos, utiliza-se o Terceiro Diedro.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" disabled>‹ Anterior</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../sa2-diedros-e-folhas/index.html'">Próximo: SA2 — Diedros e Folhas ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

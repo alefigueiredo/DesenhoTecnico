@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 1 - SA4: Sólidos Geométricos — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Fundamentos do Desenho Técnico</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-01">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 1: Fundamentos</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-definicao-e-normas/index.html" class="nav-link">SA1: Definição e Normas</a></li>
+                    <li><a href="../sa2-diedros-e-folhas/index.html" class="nav-link">SA2: Diedros e Folhas</a></li>
+                    <li><a href="../sa3-linhas-e-escalas/index.html" class="nav-link">SA3: Linhas e Escalas</a></li>
+                    <li><a href="../sa4-solidos-geometricos/index.html" class="nav-link active">SA4: Sólidos Geométricos</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 1: Fundamentos</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA4: Sólidos Geométricos</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-01-sa4">
+                <h1>Situação de Aprendizagem 4: Sólidos Geométricos e sua Aplicação em Desenho Técnico</h1>
+
+                <div class="content-block">
+                    <h2>4.1 Introdução aos Sólidos Geométricos</h2>
+                    <p>Sólidos geométricos são figuras tridimensionais que possuem comprimento, largura e altura. Na mecânica, quase todas as peças são compostas por combinações de sólidos básicos.</p>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa3-linhas-e-escalas/index.html'">‹ SA3: Linhas e Escalas</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../exercicios/index.html'">Próximo: Exercícios Módulo 1 ›</button>
+                </div>    
+
+                <div class="content-block">
+                    <h2>4.2 Cubo</h2>
+                    <p>O cubo é um paralelepípedo regular, formado por 6 faces quadradas congruentes. Cada face é perpendicular às faces adjacentes.</p>
+                    
+                    <div class="callout callout-info">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-content">
+                            <strong>No desenho técnico:</strong> O cubo é representado por 3 vistas (frente, lado e topo), cada uma mostrando um quadrado.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.3 Paralelepípedo (Bloco)</h2>
+                    <p>O paralelepípedo é formado por 6 faces retangulares, onde as faces opostas são congruentes. É a forma básica para a maioria das peças mecânicas.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.4 Pirâmide</h2>
+                    <p>A pirâmide tem uma base poligonal e faces triangulares que se encontram em um ponto comum (vértice). As pirâmides mais comuns são as de base quadrada e triangular.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.5 Cilindro</h2>
+                    <p>O cilindro é formado por duas bases circulares paralelas e congruentes, conectadas por uma superfície curva. É fundamental em eixos, pinos e tubos.</p>
+                    
+                    <div class="callout callout-warning">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-content">
+                            <strong>Importante:</strong> Na representação do cilindro, as bases circulares aparecem como círculos nas vistas perpendiculares ao eixo, e como retângulos nas vistas paralelas ao eixo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.6 Cone</h2>
+                    <p>O cone tem uma base circular e uma superfície curva que se estende até um vértice. É utilizado em peças de transição e elementos de fixação.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.7 Esfera</h2>
+                    <p>A esfera é um sólido perfeitamente simétrico, onde todos os pontos de sua superfície estão à mesma distância do centro. Em desenho técnico, é representada por 2 vistas (frente e lado), ambas circulares.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.8 Prisma</h2>
+                    <p>O prisma tem duas bases poligonais congruentes e paralelas, conectadas por faces retangulares. Os prismas podem ser triangulares, quadrangulares, hexagonais, etc.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>4.9 Peças Compostas</h2>
+                    <p>Muitas peças mecânicas são compostas pela união ou subtração de sólidos básicos. É essencial identificar os sólidos que compõem a peça para interpretar corretamente o desenho.</p>
+                    
+                    <div class="callout callout-success">
+                        <div class="callout-icon">✅</div>
+                        <div class="callout-content">
+                            <strong>Dica SENAI:</strong> Para interpretar peças complexas, decomponha-as mentalmente em sólidos básicos (cubo, cilindro, pirâmide, etc.) e entenda como eles se unem.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../../sa3-linhas-e-escalas/index.html'">‹ SA3: Linhas e Escalas</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../../modulo-2-projecao/sa1-croqui-perspectiva/index.html'">Próximo: Módulo 2 — Projeção Ortogonal ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

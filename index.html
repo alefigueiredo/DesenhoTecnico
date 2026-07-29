@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura e Interpretação de Desenho Técnico Mecânico — SENAI SP</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação"><span></span><span></span><span></span></button>
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Módulos 1-4</p>
+        </div>
+        <div class="sidebar-progress">
+            <div class="progress-label"><span>Progresso</span><span id="navProgressText">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="navProgressFill"></div></div>
+        </div>
+        <ul class="nav-list" id="navList">
+            <li class="nav-module active">
+                <button class="nav-module-btn" data-module="mod-00"><span class="nav-icon">📚</span><span>Início</span><span class="nav-arrow">›</span></button>
+                <ul class="nav-sections" style="display: block;">
+                    <li><a href="modulo-1-fundamentos/sa1-definicao-e-normas/index.html" class="nav-link">Módulo 1: Fundamentos</a></li>
+                    <li><a href="modulo-2-projecao/sa1-croqui-perspectiva/index.html" class="nav-link">Módulo 2: Croquis e Projeção</a></li>
+                    <li><a href="modulo-3-montagem/sa1-tipos-corte/index.html" class="nav-link">Módulo 3: Desenho de Montagem</a></li>
+                    <li><a href="modulo-4-tolerancias/sa1-tolerancias-dimensionais/index.html" class="nav-link">Módulo 4: Tolerâncias e Acabamento</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer"><p class="sidebar-footer-text">SENAI SP — Material Digital</p></div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="main-content" id="mainContent" role="main">
+        <div class="content-area">
+            <section class="content-section active" id="inicio">
+                <h1>Leitura e Interpretação de Desenho Técnico Mecânico</h1>
+                <div class="content-block">
+                    <p>Bem-vindo ao curso de Leitura e Interpretação de Desenho Técnico Mecânico do SENAI SP.</p>
+                    <p>Este material foi desenvolvido para capacitá-lo a interpretar desenhos técnicos seguindo as normas técnicas brasileiras e internacionais.</p>
+                </div>
+                <div class="module-grid">
+                    <a href="modulo-1-fundamentos/sa1-definicao-e-normas/index.html" class="module-card">
+                        <span class="module-icon">📘</span>
+                        <h3>Módulo 1</h3>
+                        <p>Fundamentos do Desenho Técnico</p>
+                    </a>
+                    <a href="modulo-2-projecao/sa1-croqui-perspectiva/index.html" class="module-card">
+                        <span class="module-icon">📐</span>
+                        <h3>Módulo 2</h3>
+                        <p>Croquis e Projeção Ortogonal</p>
+                    </a>
+                    <a href="modulo-3-montagem/sa1-tipos-corte/index.html" class="module-card">
+                        <span class="module-icon">🔧</span>
+                        <h3>Módulo 3</h3>
+                        <p>Desenho de Montagem</p>
+                    </a>
+                    <a href="modulo-4-tolerancias/sa1-tolerancias-dimensionais/index.html" class="module-card">
+                        <span class="module-icon">📏</span>
+                        <h3>Módulo 4</h3>
+                        <p>Tolerâncias e Acabamento</p>
+                    </a>
+                </div>
+                <div class="content-block">
+                    <h2>Objetivos do Curso</h2>
+                    <ul>
+                        <li>Conhecer as normas técnicas de desenho técnico</li>
+                        <li>Interpretar projeções ortogonais</li>
+                        <li>Ler e aplicar tolerâncias dimensionais e geométricas</li>
+                        <li>Interpretar acabamentos superficiais</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

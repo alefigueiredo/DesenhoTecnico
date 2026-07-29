@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 3 - SA3: Desenho de Conjuntos — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Desenho de Montagem</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-03">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 3: Desenho de Montagem</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-03-sa1" class="nav-link">SA1: Tipos de Corte</a></li>
+                    <li><a href="#" data-section="mod-03-sa2" class="nav-link">SA2: Vistas Especiais</a></li>
+                    <li><a href="#" data-section="mod-03-sa3" class="nav-link active">SA3: Desenho de Conjuntos</a></li>
+                    <li><a href="#" data-section="mod-03-exercicios" class="nav-link">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-03-avaliacao" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 3: Desenho de Montagem</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA3: Desenho de Conjuntos</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-03-sa3">
+                <h1>Situação de Aprendizagem 3: Desenho de Conjuntos e Elementos de Máquina</h1>
+
+                <div class="content-block">
+                    <h2>3.1 O que é um Desenho de Montagem?</h2>
+                    <p>O desenho de montagem mostra como as diversas peças de um mecanismo se encaixam e se relacionam entre si. É essencial para a montagem, manutenção e reparo de máquinas.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.2 Elementos de Fixação</h2>
+                    <p>Os elementos de fixação são usados para unir peças entre si:</p>
+                    <ul>
+                        <li><strong>Parafusos:</strong> elementos com roscas externas</li>
+                        <li><strong>Porcas:</strong> elementos com roscas internas</li>
+                        <li><strong>Arruelas:</strong> peças planas com furo central</li>
+                        <li><strong>Pinos:</strong> elementos cilíndricos para alinhamento</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.3 Elementos de Transmissão</h2>
+                    <p>Os elementos de transmissão movem e transformam movimentos:</p>
+                    <ul>
+                        <li><strong>Rodas de fricção:</strong> transmissão por atrito</li>
+                        <li><strong>Rodas de engrenagens:</strong> transmissão por engrenagem</li>
+                        <li><strong>Polias e correntes:</strong> transmissão por correia ou corrente</li>
+                        <li><strong>Eixos e mancais:</strong> suporte e rotação</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.4 Vista Explodida</h2>
+                    <p>A vista explodida mostra as peças separadas, mas mantendo sua posição relativa, facilitando a identificação de cada componente e sua ordem de montagem.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.5 Lista de Materiais (BOM)</h2>
+                    <p>A Lista de Materiais (Bill of Materials) é uma tabela que lista todas as peças que compõem o conjunto, com:</p>
+                    <ul>
+                        <li>Número de peça</li>
+                        <li>Descrição</li>
+                        <li>Material</li>
+                        <li>Quantidade</li>
+                        <li>Massa</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.6 Balões de Identificação</h2>
+                    <p>Os balões são círculos numerados que se conectam à lista de materiais, identificando cada peça no desenho.</p>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa2-vistas-especiais/index.html'">‹ SA2: Vistas Especiais</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../exercicios/index.html'">Próximo: Exercícios Módulo 3 ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

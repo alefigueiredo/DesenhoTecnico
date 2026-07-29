@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4 - Avaliação: Tolerâncias e Acabamento — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Módulo 4: Tolerâncias e Acabamento</p>
+        </div>
+        <div class="sidebar-progress">
+            <div class="progress-label"><span>Progresso</span><span id="navProgressText">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="navProgressFill"></div></div>
+        </div>
+        <ul class="nav-list" id="navList">
+            <li class="nav-module open">
+                <button class="nav-module-btn" data-module="mod-04">
+                    <span class="nav-icon">📏</span>
+                    <span>Módulo 4: Tolerâncias</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-tolerancias-dimensionais/index.html" class="nav-link">SA1: Tolerâncias Dimensionais</a></li>
+                    <li><a href="../sa2-tolerancias-geometricas/index.html" class="nav-link">SA2: Tolerâncias Geométricas</a></li>
+                    <li><a href="../sa3-acabamento-superficial/index.html" class="nav-link">SA3: Acabamento Superficial</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link active">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer"><p class="sidebar-footer-text">SENAI SP — Material Digital</p></div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 4: Tolerâncias</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Avaliação Somativa</span>
+        </div>
+
+        <div class="content-area">
+            <section class="content-section active">
+                <h1>Avaliação Somativa — Módulo 4: Tolerâncias e Acabamento</h1>
+                <div class="callout callout-info">
+                    <strong>Orientação:</strong> Selecione a alternativa correta para cada uma das 5 questões abaixo e clique em <em>"Finalizar e Calcular Nota"</em>. A nota mínima para aprovação é <strong>7,0 (70%)</strong>.
+                </div>
+
+                <!-- Questão 1 -->
+                <div class="exercise" id="q1">
+                    <p class="exercise-text">1. O que é a tolerância dimensional no desenho técnico mecânico?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q1" value="a"><span class="option-letter">A</span><span>A variação permissível entre a dimensão máxima e a dimensão mínima de uma peça.</span></label>
+                        <label class="option"><input type="radio" name="q1" value="b"><span class="option-letter">B</span><span>O valor exato nominal sem nenhum erro de usinagem.</span></label>
+                        <label class="option"><input type="radio" name="q1" value="c"><span class="option-letter">C</span><span>A rugosidade da ferramenta de corte no torno CNC.</span></label>
+                        <label class="option"><input type="radio" name="q1" value="d"><span class="option-letter">D</span><span>O peso total do material metálico antes do corte.</span></label>
+                    </div>
+                </div>
+
+                <!-- Questão 2 -->
+                <div class="exercise" id="q2">
+                    <p class="exercise-text">2. Qual é a tolerância fundamental (campo de variação em micrometros) para um campo de qualidade <strong>IT7</strong> em dimensões nominais de 30 a 50 mm?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q2" value="a"><span class="option-letter">A</span><span>0,005 mm (5 µm)</span></label>
+                        <label class="option"><input type="radio" name="q2" value="b"><span class="option-letter">B</span><span>0,025 mm (25 µm)</span></label>
+                        <label class="option"><input type="radio" name="q2" value="c"><span class="option-letter">C</span><span>0,100 mm (100 µm)</span></label>
+                        <label class="option"><input type="radio" name="q2" value="d"><span class="option-letter">D</span><span>0,500 mm (500 µm)</span></label>
+                    </div>
+                </div>
+
+                <!-- Questão 3 -->
+                <div class="exercise" id="q3">
+                    <p class="exercise-text">3. O símbolo de tolerância geométrica constituído por duas circunferências concêntricas (<strong>◎</strong>) refere-se a:</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q3" value="a"><span class="option-letter">A</span><span>Concentricidade / Coaxialidade</span></label>
+                        <label class="option"><input type="radio" name="q3" value="b"><span class="option-letter">B</span><span>Planicidade</span></label>
+                        <label class="option"><input type="radio" name="q3" value="c"><span class="option-letter">C</span><span>Simetria</span></label>
+                        <label class="option"><input type="radio" name="q3" value="d"><span class="option-letter">D</span><span>Inclinação</span></label>
+                    </div>
+                </div>
+
+                <!-- Questão 4 -->
+                <div class="exercise" id="q4">
+                    <p class="exercise-text">4. Em um desenho técnico, a indicação de rugosidade com valor <strong>Ra = 0,4 µm</strong> refere-se a qual superfície?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q4" value="a"><span class="option-letter">A</span><span>Superfície em bruto de fundição (N11)</span></label>
+                        <label class="option"><input type="radio" name="q4" value="b"><span class="option-letter">B</span><span>Superfície retificada de alta precisão (Classe N5)</span></label>
+                        <label class="option"><input type="radio" name="q4" value="c"><span class="option-letter">C</span><span>Superfície cortada a oxicorte industrial</span></label>
+                        <label class="option"><input type="radio" name="q4" value="d"><span class="option-letter">D</span><span>Superfície forjada sem acabamento</span></label>
+                    </div>
+                </div>
+
+                <!-- Questão 5 -->
+                <div class="exercise" id="q5">
+                    <p class="exercise-text">5. O sistema de ajuste recomendado pela ABNT onde o elemento base é o <strong>Furo Padrão</strong> utiliza qual letra maiúscula de posição?</p>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q5" value="a"><span class="option-letter">A</span><span>Letra H</span></label>
+                        <label class="option"><input type="radio" name="q5" value="b"><span class="option-letter">B</span><span>Letra A</span></label>
+                        <label class="option"><input type="radio" name="q5" value="c"><span class="option-letter">C</span><span>Letra JS</span></label>
+                        <label class="option"><input type="radio" name="q5" value="d"><span class="option-letter">D</span><span>Letra Z</span></label>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 30px;">
+                    <button class="btn btn-primary" id="btnCalcularNota" style="font-size: 1.1rem; padding: 12px 24px;">Finalizar e Calcular Nota</button>
+                    
+                    <div class="callout callout-info" id="divResultado" style="display: none; margin-top: 20px;">
+                        <h3 style="margin-top:0;">Resultado da Avaliação:</h3>
+                        <p><strong>Sua nota final:</strong> <span id="spnNota" style="font-size:1.4rem; font-weight:bold; color:#38bdf8;"></span> / 10,0</p>
+                        <p><strong>Acertos:</strong> <span id="spnAcertos"></span> de 5 questões (<span id="spnPorcentagem"></span>%)</p>
+                        <p id="spnSituacao" style="font-size:1.2rem; font-weight:bold;"></p>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../exercicios/index.html'">‹ Exercícios Módulo 4</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../../index.html'">Concluir Curso / Voltar ao Início 🏠</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+    <script>
+        document.getElementById('btnCalcularNota').addEventListener('click', function() {
+            var gabarito = { q1: 'a', q2: 'b', q3: 'a', q4: 'b', q5: 'a' };
+            var acertos = 0;
+
+            for (var q in gabarito) {
+                var selected = document.querySelector('input[name="' + q + '"]:checked');
+                var exerciseContainer = document.getElementById(q);
+                
+                if (selected && selected.value === gabarito[q]) {
+                    acertos++;
+                    if (exerciseContainer) exerciseContainer.style.borderLeft = '4px solid #22c55e';
+                } else if (exerciseContainer) {
+                    exerciseContainer.style.borderLeft = '4px solid #ef4444';
+                }
+            }
+
+            var nota = acertos * 2.0;
+            var porcentagem = (acertos / 5) * 100;
+            var aprovado = nota >= 7.0;
+            
+            document.getElementById('spnNota').textContent = nota.toFixed(1);
+            document.getElementById('spnAcertos').textContent = acertos;
+            document.getElementById('spnPorcentagem').textContent = porcentagem;
+            
+            var situacaoEl = document.getElementById('spnSituacao');
+            if (aprovado) {
+                situacaoEl.textContent = '🎉 PARABÉNS! Você foi APROVADO no Módulo 4!';
+                situacaoEl.style.color = '#4ade80';
+            } else {
+                situacaoEl.textContent = '❌ Desempenho insuficiente (Nota mínima: 7,0). Revise as SAs e tente novamente!';
+                situacaoEl.style.color = '#f87171';
+            }
+
+            document.getElementById('divResultado').style.display = 'block';
+            window.scrollTo({ top: document.getElementById('divResultado').offsetTop - 100, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 4 - SA2: Tolerâncias Geométricas — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Tolerâncias e Acabamento</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-04">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 4: Tolerâncias e Acabamento</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-tolerancias-dimensionais/index.html" class="nav-link">SA1: Tolerâncias Dimensionais</a></li>
+                    <li><a href="../sa2-tolerancias-geometricas/index.html" class="nav-link active">SA2: Tolerâncias Geométricas</a></li>
+                    <li><a href="../sa3-acabamento-superficial/index.html" class="nav-link">SA3: Acabamento Superficial</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 4: Tolerâncias e Acabamento</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA2: Tolerâncias Geométricas</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-04-sa2">
+                <h1>Situação de Aprendizagem 2: Tolerâncias Geométricas</h1>
+
+                <div class="content-block">
+                    <h2>2.1 O que são Tolerâncias Geométricas?</h2>
+                    <p>As tolerâncias geométricas controlam a forma, a orientação, a localização e o batimento de elementos de uma peça. São indicadas por símbolos específicos em caixas retangulares.</p>
+                    
+                    <div class="img-container" style="margin: 20px 0; text-align: center;">
+                        <img src="../../assets/fig-tolerancias-simbolo.svg" alt="Simbologia de Tolerância Geométrica e Rugosidade ABNT" style="max-width:100%; height:auto;">
+                    </div>
+
+                    <div class="callout callout-info">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-content">
+                            <strong>Vantagem sobre a cotagem tradicional:</strong> As tolerâncias geométricas controlam múltiplos aspectos da peça com uma única indicação.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.2 Tolerâncias de Forma</h2>
+                    <p>Controlam a forma geométrica ideal do elemento:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Símbolo</th>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>─</td>
+                                    <td>Linearidade</td>
+                                    <td>Controla se uma linha é perfeitamente reta</td>
+                                </tr>
+                                <tr>
+                                    <td>○</td>
+                                    <td>Redondeza</td>
+                                    <td>Controla se uma superfície circular é perfeitamente redonda</td>
+                                </tr>
+                                <tr>
+                                    <td>□</td>
+                                    <td>Quadriculidade</td>
+                                    <td>Controla se uma superfície é perfeitamente plana</td>
+                                </tr>
+                                <tr>
+                                    <td>◎</td>
+                                    <td>Circularidade</td>
+                                    <td>Controla se uma superfície circular é perfeitamente circular</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.3 Tolerâncias de Orientação</h2>
+                    <p>Controlam a orientação angular de elementos:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Símbolo</th>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>⌒</td>
+                                    <td>Paralelismo</td>
+                                    <td>Controla se uma linha/superfície é paralela a uma referência</td>
+                                </tr>
+                                <tr>
+                                    <td>⊥</td>
+                                    <td>Perpendicularidade</td>
+                                    <td>Controla se uma linha/superfície é perpendicular a uma referência</td>
+                                </tr>
+                                <tr>
+                                    <td>∥</td>
+                                    <td>Angulação</td>
+                                    <td>Controla o ângulo entre duas linhas/superfícies</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.4 Tolerâncias de Localização</h2>
+                    <p>Controlam a posição exata de elementos:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Símbolo</th>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>⌖</td>
+                                    <td>Posição</td>
+                                    <td>Controla a posição de um elemento em relação a referências</td>
+                                </tr>
+                                <tr>
+                                    <td>sym</td>
+                                    <td>Simetria</td>
+                                    <td>Controla a simetria de uma superfície em relação a um plano</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.5 Tolerâncias de Batimento</h2>
+                    <p>Controlam a variação radial de uma superfície em rotação:</p>
+                    <ul>
+                        <li><strong>Radial:</strong> controla variação radial em torno de um eixo</li>
+                        <li><strong>Face:</strong> controla variação axial em uma face</li>
+                        <li><strong>Combinado:</strong> controla both radial e axial</li>
+                    </ul>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa1-tolerancias-dimensionais/index.html'">‹ SA1: Tolerâncias Dimensionais</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../sa3-acabamento-superficial/index.html'">Próximo: SA3 — Acabamento Superficial ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

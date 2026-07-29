@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 260" width="100%" height="260" style="background:#0f172a; border-radius:12px; font-family:sans-serif;">
+    <style>
+        .title { fill: #f8fafc; font-size: 16px; font-weight: bold; }
+        .label { fill: #cbd5e1; font-size: 13px; }
+        .desc { fill: #94a3b8; font-size: 12px; }
+    </style>
+    
+    <text x="20" y="30" class="title">Tipos de Linhas — ABNT NBR 8403</text>
+    
+    <!-- Linha Contínua Larga -->
+    <g transform="translate(20, 50)">
+        <text x="0" y="20" class="label">Contínua Larga (0,5 - 0,7 mm):</text>
+        <line x1="240" y1="15" x2="440" y2="15" stroke="#38bdf8" stroke-width="4"/>
+        <text x="460" y="20" class="desc">Contornos e arestas visíveis</text>
+    </g>
+
+    <!-- Linha Traçada -->
+    <g transform="translate(20, 95)">
+        <text x="0" y="20" class="label">Traçada Estreita (0,25 - 0,35 mm):</text>
+        <line x1="240" y1="15" x2="440" y2="15" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 5"/>
+        <text x="460" y="20" class="desc">Contornos e arestas não visíveis</text>
+    </g>
+
+    <!-- Linha Traço e Ponto -->
+    <g transform="translate(20, 140)">
+        <text x="0" y="20" class="label">Traço e Ponto Estreito (0,25 mm):</text>
+        <line x1="240" y1="15" x2="440" y2="15" stroke="#4ade80" stroke-width="2" stroke-dasharray="14 4 3 4"/>
+        <text x="460" y="20" class="desc">Linhas de centro e eixos de simetria</text>
+    </g>
+
+    <!-- Linha Contínua Fina -->
+    <g transform="translate(20, 185)">
+        <text x="0" y="20" class="label">Contínua Fina (0,25 mm):</text>
+        <line x1="240" y1="15" x2="440" y2="15" stroke="#e2e8f0" stroke-width="1.5"/>
+        <text x="460" y="20" class="desc">Linhas de cota, extensão e hachuras</text>
+    </g>
+</svg>

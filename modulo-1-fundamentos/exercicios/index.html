@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 1 - Exercícios — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Fundamentos do Desenho Técnico</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-01">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 1: Fundamentos</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-01-sa1" class="nav-link">SA1: Definição e Normas</a></li>
+                    <li><a href="#" data-section="mod-01-sa2" class="nav-link">SA2: Diedros e Folhas</a></li>
+                    <li><a href="#" data-section="mod-01-sa3" class="nav-link">SA3: Linhas e Escalas</a></li>
+                    <li><a href="#" data-section="mod-01-sa4" class="nav-link">SA4: Sólidos Geométricos</a></li>
+                    <li><a href="#" data-section="mod-01-exercicios" class="nav-link active">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-01-avaliacao" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 1: Fundamentos</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Exercícios</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-01-exercicios">
+                <h1>Exercícios — Módulo 1: Fundamentos</h1>
+
+                <div class="exercise" id="ex-m1-1">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 1</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">1. O que é Desenho Técnico?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-1" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Um desenho artístico que expressa emoções</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-1" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Uma linguagem universal da engenharia para representar formas com exatidão</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-1" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Um desenho feito à mão livre sem preocupação com dimensões</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-1" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-1"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-2">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 2</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">2. No Brasil, qual sistema de projeção é utilizado?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-2" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Terceiro Diedro</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-2" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Primeiro Diedro</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-2" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Segundo Diedro</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-2" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-2"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-3">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 3</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">3. Qual a dimensão da folha formato A3?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-3" value="a">
+                                <span class="option-letter">A</span>
+                                <span>210 × 297 mm</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-3" value="b">
+                                <span class="option-letter">B</span>
+                                <span>297 × 420 mm</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-3" value="c">
+                                <span class="option-letter">C</span>
+                                <span>420 × 594 mm</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-3" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-3"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-4">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 4</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">4. Qual a largura da linha contínua grossa?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-4" value="a">
+                                <span class="option-letter">A</span>
+                                <span>0,18 mm</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-4" value="b">
+                                <span class="option-letter">B</span>
+                                <span>0,35 mm</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-4" value="c">
+                                <span class="option-letter">C</span>
+                                <span>0,7 mm</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-4" data-answer="c">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-4"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-5">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 5</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">5. Qual a escala utilizada quando o desenho tem o mesmo tamanho da peça real?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-5" value="a">
+                                <span class="option-letter">A</span>
+                                <span>1:2</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-5" value="b">
+                                <span class="option-letter">B</span>
+                                <span>1:1</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-5" value="c">
+                                <span class="option-letter">C</span>
+                                <span>2:1</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-5" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-5"></div>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa4-solidos-geometricos/index.html'">‹ SA4: Sólidos Geométricos</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../avaliacao/index.html'">Próximo: Avaliação Módulo 1 ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

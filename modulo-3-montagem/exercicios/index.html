@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 3 - Exercícios — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Desenho de Montagem</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-03">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 3: Desenho de Montagem</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-03-sa1" class="nav-link">SA1: Tipos de Corte</a></li>
+                    <li><a href="#" data-section="mod-03-sa2" class="nav-link">SA2: Vistas Especiais</a></li>
+                    <li><a href="#" data-section="mod-03-sa3" class="nav-link">SA3: Conjuntos</a></li>
+                    <li><a href="#" data-section="mod-03-exercicios" class="nav-link active">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-03-avaliacao" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 3: Desenho de Montagem</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Exercícios</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-03-exercicios">
+                <h1>Exercícios — Módulo 3: Desenho de Montagem</h1>
+
+                <div class="exercise" id="ex-m3-1">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 1</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">1. O que é um corte total?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-1" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Um corte que atravessa o objeto em uma única direção</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-1" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Um corte que mostra apenas uma parte do objeto</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-1" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Um corte que utiliza dois ou mais planos paralelos</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-1" data-answer="a">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-1"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-2">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 2</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">2. Em que situação deve ser utilizado o meio-corte?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-2" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Quando o objeto é muito grande</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-2" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Quando o objeto é simétrico e se quer mostrar interno e externo</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-2" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Quando o objeto tem poucas curvas</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-2" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-2"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-3">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 3</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">3. O que é uma seção?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-3" value="a">
+                                <span class="option-letter">A</span>
+                                <span>A representação do objeto cortado e projetado</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-3" value="b">
+                                <span class="option-letter">B</span>
+                                <span>A representação do corte de uma superfície apenas</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-3" value="c">
+                                <span class="option-letter">C</span>
+                                <span>A representação do objeto em perspectiva</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-3" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-3"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-4">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 4</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">4. A vista auxiliar é utilizada para:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-4" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Representar superfícies inclinadas em verdadeira grandeza</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-4" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Mostrar o objeto em movimento</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-4" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Substituir a vista frontal</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-4" data-answer="a">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-4"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-5">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Exercício 5</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">5. O que é o encurtamento em desenho de montagem?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-5" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Reduzir o tamanho do desenho na folha</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-5" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Omitir partes repetitivas de peças longas</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-5" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Reduzir a espessura das linhas</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-5" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-5"></div>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa3-conjuntos/index.html'">‹ SA3: Desenho de Conjuntos</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../avaliacao/index.html'">Próximo: Avaliação Módulo 3 ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 2 - SA3: Cotagem — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Projeção Ortogonal e Croqui</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-02">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 2: Projeção Ortogonal</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-02-sa1" class="nav-link">SA1: Croqui e Perspectiva</a></li>
+                    <li><a href="#" data-section="mod-02-sa2" class="nav-link">SA2: Projeção Ortogonal</a></li>
+                    <li><a href="#" data-section="mod-02-sa3" class="nav-link active">SA3: Cotagem</a></li>
+                    <li><a href="#" data-section="mod-02-exercicios" class="nav-link">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-02-avaliacao" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 2: Projeção Ortogonal</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA3: Cotagem</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-02-sa3">
+                <h1>Situação de Aprendizagem 3: Cotagem</h1>
+
+                <div class="content-block">
+                    <h2>3.1 O que é Cotagem?</h2>
+                    <p>A cotagem é o conjunto de linhas, números e símbolos que indicam as dimensões de uma peça. É a parte mais importante do desenho técnico, pois define o tamanho exato do objeto.</p>
+                    
+                    <div class="callout callout-info">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-content">
+                            <strong>NBR 10126:</strong> As normas ABNT estabelecem as regras para a aplicação de cotas em desenhos técnicos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.2 Elementos da Cota</h2>
+                    <p>Uma cota é composta por:</p>
+                    <ul>
+                        <li><strong>Linha de cota:</strong> linha contínua-fina paralela à dimensão a ser cotada</li>
+                        <li><strong>Linha de extensão:</strong> linha contínua-fina perpendicular à linha de cota</li>
+                        <li><strong>Setas ou barras de cota:</strong> indicam as extremidades da cota</li>
+                        <li><strong>Número da cota:</strong> valor da dimensão em milímetros (padrão)</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.3 Regras Básicas de Cotagem</h2>
+                    <ul>
+                        <li><strong>Clareza:</strong> As cotas devem ser legíveis e bem posicionadas</li>
+                        <li><strong>Completude:</strong> Todas as dimensões necessárias devem estar indicadas</li>
+                        <li><strong>Única localização:</strong> Cada dimensão deve aparecer apenas uma vez</li>
+                        <li><strong>Dimensão real:</strong> As cotas indicam dimensões reais, independentemente da escala do desenho</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.4 Tipos de Cotagem</h2>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                    <th>Aplicação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Cotagem linear</strong></td>
+                                    <td>Dimensões lineares (comprimento, largura, altura)</td>
+                                    <td>Peças retangulares, eixos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cotagem angular</strong></td>
+                                    <td>Ângulos entre superfícies</td>
+                                    <td>Peças com ângulos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cotagem radial</strong></td>
+                                    <td>Raios de curvas e arcos</td>
+                                    <td>Peças cilíndricas, curvas</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cotagem diametral</strong></td>
+                                    <td>Diâmetros de furos e cilindros</td>
+                                    <td>Furos, eixos, tubos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa2-projecao-ortogonal/index.html'">‹ SA2: Projeção Ortogonal</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../exercicios/index.html'">Próximo: Exercícios Módulo 2 ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 3 - Avaliação — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Desenho de Montagem</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-03">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 3: Desenho de Montagem</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-03-sa1" class="nav-link">SA1: Tipos de Corte</a></li>
+                    <li><a href="#" data-section="mod-03-sa2" class="nav-link">SA2: Vistas Especiais</a></li>
+                    <li><a href="#" data-section="mod-03-sa3" class="nav-link">SA3: Conjuntos</a></li>
+                    <li><a href="#" data-section="mod-03-exercicios" class="nav-link">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-03-avaliacao" class="nav-link active">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 3: Desenho de Montagem</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Avaliação</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-03-avaliacao">
+                <h1>Avaliação — Módulo 3: Desenho de Montagem</h1>
+
+                <div class="content-block">
+                    <p>Esta avaliação contém 5 questões objetivas sobre os conteúdos do Módulo 3. A nota mínima para aprovação é 70% (4 acertos).</p>
+                    <p><strong>Total de questões:</strong> 5<br><strong>Peso de cada questão:</strong> 2,0 pontos<br><strong>Nota mínima para aprovação:</strong> 7,0</p>
+                </div>
+
+                <div class="exercise" id="ex-m3-av1">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 1</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">1. Qual o tipo de corte que utiliza dois ou mais planos paralelos?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av1" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Corte composto</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av1" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Corte total</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av1" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Corte parcial</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-av1" data-answer="a">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-av1"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-av2">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 2</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">2. A omissão de corte deve ser utilizada para:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av2" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Peças com simetria completa</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av2" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Peças longas com seção transversal constante</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av2" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Peças pequenas e simples</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-av2" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-av2"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-av3">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 3</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">3. A vista de rotação é utilizada para:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av3" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Representar superfícies inclinadas em verdadeira grandeza</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av3" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Mostrar formas circulares inclinadas em verdadeira grandeza</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av3" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Substituir a vista superior</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-av3" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-av3"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-av4">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 4</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">4. Em um desenho de montagem, o que são balões de identificação?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av4" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Círculos numerados que indicam as peças</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av4" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Setas que indicam o fluxo de montagem</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av4" value="c">
+                                <span class="option-letter">C</span>
+                                <span>Linhas tracejadas que mostram o caminho de força</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-av4" data-answer="a">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-av4"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m3-av5">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 5</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">5. A lista de materiais em um desenho de montagem deve conter:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av5" value="a">
+                                <span class="option-letter">A</span>
+                                <span>Apenas o código do material</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av5" value="b">
+                                <span class="option-letter">B</span>
+                                <span>Número de identificação, quantidade, nome e material</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m3-av5" value="c">
+                                <span class="option-letter">C</span>
+                                <span>O preço de custo de cada peça</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m3-av5" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m3-av5"></div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Resultados da Avaliação</h2>
+                    <p>Para ver seu resultado, responda todas as questões e clique em "Calcular Nota".</p>
+                    <button class="btn btn-primary" id="btnCalcularNota">Calcular Nota</button>
+                    <div class="callout callout-info" id="divResultado" style="display: none;">
+                        <div class="callout-icon">📊</div>
+                        <div class="callout-content">
+                            <p><strong>Sua nota:</strong> <span id="spnNota"></span>/10,0</p>
+                            <p><strong>Acertos:</strong> <span id="spnAcertos"></span>/5 questões</p>
+                            <p id="spnSituacao"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../exercicios/index.html'">‹ Exercícios Módulo 3</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../../modulo-4-tolerancias/sa1-tolerancias-dimensionais/index.html'">Próximo Módulo ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+    <script>
+        document.getElementById('btnCalcularNota').addEventListener('click', function() {
+            var acertos = 0;
+            var total = 5;
+            
+            // Questão 1
+            if (document.querySelector('input[name="ex-m3-av1"]:checked')) {
+                if (document.querySelector('input[name="ex-m3-av1"]:checked').value === 'a') acertos++;
+            }
+            
+            // Questão 2
+            if (document.querySelector('input[name="ex-m3-av2"]:checked')) {
+                if (document.querySelector('input[name="ex-m3-av2"]:checked').value === 'b') acertos++;
+            }
+            
+            // Questão 3
+            if (document.querySelector('input[name="ex-m3-av3"]:checked')) {
+                if (document.querySelector('input[name="ex-m3-av3"]:checked').value === 'b') acertos++;
+            }
+            
+            // Questão 4
+            if (document.querySelector('input[name="ex-m3-av4"]:checked')) {
+                if (document.querySelector('input[name="ex-m3-av4"]:checked').value === 'a') acertos++;
+            }
+            
+            // Questão 5
+            if (document.querySelector('input[name="ex-m3-av5"]:checked')) {
+                if (document.querySelector('input[name="ex-m3-av5"]:checked').value === 'b') acertos++;
+            }
+            
+            var nota = acertos * 2.0;
+            var situacao = nota >= 7.0 ? '✅ Aprovado!' : '❌ Reprovado. Tente novamente!';
+            
+            document.getElementById('spnNota').textContent = nota.toFixed(1);
+            document.getElementById('spnAcertos').textContent = acertos;
+            document.getElementById('spnSituacao').textContent = situacao;
+            document.getElementById('divResultado').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

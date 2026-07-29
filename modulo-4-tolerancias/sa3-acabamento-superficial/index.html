@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 4 - SA3: Acabamento Superficial — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Tolerâncias e Acabamento</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-04">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 4: Tolerâncias e Acabamento</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-04-sa1" class="nav-link">SA1: Tolerâncias Dimensionais</a></li>
+                    <li><a href="#" data-section="mod-04-sa2" class="nav-link">SA2: Tolerâncias Geométricas</a></li>
+                    <li><a href="#" data-section="mod-04-sa3" class="nav-link active">SA3: Acabamento Superficial</a></li>
+                    <li><a href="#" data-section="mod-04-exercicios" class="nav-link">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-04-avaliacao" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 4: Tolerâncias e Acabamento</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA3: Acabamento Superficial</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-04-sa3">
+                <h1>Situação de Aprendizagem 3: Acabamento Superficial</h1>
+
+                <div class="content-block">
+                    <h2>3.1 O que é Acabamento Superficial?</h2>
+                    <p>O acabamento superficial é a característica da superfície de uma peça resultante do processo de fabricação. É indicado no desenho técnico por um símbolo normalizado que expressa a rugosidade da superfície.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.2 O que é Rugosidade?</h2>
+                    <p>A rugosidade é a irregularidade fina da superfície, composta por microondulações resultantes do processo de usinagem. É medida em micrômetros (μm) ou micropolegadas (μin).</p>
+                    
+                    <div class="callout callout-info">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-content">
+                            <strong>Importância:</strong> O acabamento superficial afeta o atrito, a resistência ao desgaste, a lubrificação e a aparência da peça.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.3 Símbolos de Acabamento (NBR 6158)</h2>
+                    <p>Os símbolos indicam o tipo de processo e a direção da superfície:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Símbolo</th>
+                                    <th>Significado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>√</td>
+                                    <td>Superfície usinada (qualquer processo)</td>
+                                </tr>
+                                <tr>
+                                    <td>√-</td>
+                                    <td>Superfície usinada, remoção de material</td>
+                                </tr>
+                                <tr>
+                                    <td>√+</td>
+                                    <td>Superfície usinada, com camada deformada</td>
+                                </tr>
+                                <tr>
+                                    <td>√~</td>
+                                    <td>Superfície não usinada</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.4 Valores de Rugosidade</h2>
+                    <p>Os valores de rugosidade mais comuns são:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Ra (μm)</th>
+                                    <th>Processo</th>
+                                    <th>Aplicação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>0.025 - 0.05</strong></td>
+                                    <td>Escavação diamantada</td>
+                                    <td>Superfícies de ajuste precisos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>0.1 - 0.2</strong></td>
+                                    <td>Rectificação</td>
+                                    <td>Superfícies de rolamentos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>0.4 - 0.8</strong></td>
+                                    <td>Desbaste fino, fresamento</td>
+                                    <td>Superfícies de montagem</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>1.6 - 3.2</strong></td>
+                                    <td>Usinagem com ferramenta de aço</td>
+                                    <td>Superfícies gerais</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>6.3 - 12.5</strong></td>
+                                    <td>Desbaste grosso</td>
+                                    <td>Superfícies estruturais</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>3.5 Indicação no Desenho</h2>
+                    <p>A indicação do acabamento superficial inclui:</p>
+                    <ul>
+                        <li>O símbolo básico (√)</li>
+                        <li>O valor de rugosidade (Ra em μm)</li>
+                        <li>O processo de fabricação (opcional)</li>
+                        <li>A direção da superfície (opcional)</li>
+                    </ul>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa2-tolerancias-geometricas/index.html'">‹ SA2: Tolerâncias Geométricas</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../exercicios/index.html'">Próximo: Exercícios Módulo 4 ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

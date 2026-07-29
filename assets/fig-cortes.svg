@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="100%" height="240" style="background:#0f172a; border-radius:12px; font-family:sans-serif;">
+    <style>
+        .title { fill: #f8fafc; font-size: 16px; font-weight: bold; }
+        .label { fill: #cbd5e1; font-size: 13px; }
+        .hatch { stroke: #e2e8f0; stroke-width: 1.2; opacity: 0.7; }
+        .border { fill: #1e293b; stroke: #38bdf8; stroke-width: 2; }
+    </style>
+    
+    <text x="20" y="30" class="title">Tipos de Corte e Representação de Hachuras (ABNT NBR 10067)</text>
+
+    <!-- Corte Total -->
+    <g transform="translate(30, 60)">
+        <!-- Peça em corte total -->
+        <rect x="0" y="0" width="160" height="100" class="border"/>
+        <!-- Furo central -->
+        <rect x="55" y="0" width="50" height="100" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+        
+        <!-- Hachuras esquerda -->
+        <line x1="0" y1="30" x2="30" y2="0" class="hatch"/>
+        <line x1="0" y1="60" x2="55" y2="5" class="hatch"/>
+        <line x1="0" y1="90" x2="55" y2="35" class="hatch"/>
+        <line x1="25" y1="100" x2="55" y2="70" class="hatch"/>
+
+        <!-- Hachuras direita -->
+        <line x1="105" y1="30" x2="135" y2="0" class="hatch"/>
+        <line x1="105" y1="60" x2="160" y2="5" class="hatch"/>
+        <line x1="105" y1="90" x2="160" y2="35" class="hatch"/>
+        <line x1="130" y1="100" x2="160" y2="70" class="hatch"/>
+        
+        <text x="80" y="130" text-anchor="middle" class="label">Corte Total A-A</text>
+    </g>
+
+    <!-- Meio-Corte -->
+    <g transform="translate(240, 60)">
+        <rect x="0" y="0" width="160" height="100" class="border"/>
+        <line x1="80" y1="0" x2="80" y2="100" stroke="#38bdf8" stroke-width="2"/>
+        
+        <!-- Hachura apenas no lado direito (corte) -->
+        <line x1="80" y1="40" x2="120" y2="0" class="hatch"/>
+        <line x1="80" y1="80" x2="160" y2="0" class="hatch"/>
+        <line x1="100" y1="100" x2="160" y2="40" class="hatch"/>
+
+        <text x="80" y="130" text-anchor="middle" class="label">Meio-Corte (Metade Corte)</text>
+    </g>
+
+    <!-- Legenda de Hachura -->
+    <g transform="translate(430, 60)">
+        <rect x="0" y="0" width="140" height="100" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="70" y="30" text-anchor="middle" class="label" style="font-weight:bold;">Hachura ABNT</text>
+        <text x="70" y="55" text-anchor="middle" class="label" style="font-size:11px;">Linhas a 45°</text>
+        <text x="70" y="75" text-anchor="middle" class="label" style="font-size:11px;">Material: Aço/Ferro</text>
+    </g>
+</svg>

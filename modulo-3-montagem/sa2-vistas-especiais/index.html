@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 3 - SA2: Vistas Especiais — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Desenho de Montagem</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-03">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 3: Desenho de Montagem</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-03-sa1" class="nav-link">SA1: Tipos de Corte</a></li>
+                    <li><a href="#" data-section="mod-03-sa2" class="nav-link active">SA2: Vistas Especiais</a></li>
+                    <li><a href="#" data-section="mod-03-sa3" class="nav-link">SA3: Desenho de Conjuntos</a></li>
+                    <li><a href="#" data-section="mod-03-exercicios" class="nav-link">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-03-avaliacao" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 3: Desenho de Montagem</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA2: Vistas Especiais</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-03-sa2">
+                <h1>Situação de Aprendizagem 2: Vistas Especiais</h1>
+
+                <div class="content-block">
+                    <h2>2.1 O que são Vistas Especiais?</h2>
+                    <p>As vistas especiais são utilizadas quando as vistas normais não permitem uma representação clara da peça. Elas incluem: vistas auxiliares, vistas rotacionadas e vistas parciais.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.2 Vistas Auxiliares</h2>
+                    <p>As vistas auxiliares são projetadas em planos que não são paralelos aos planos principais de projeção. São usadas para mostrar superfícies inclinadas em verdadeira grandeza.</p>
+                    
+                    <div class="callout callout-info">
+                        <div class="callout-icon">ℹ️</div>
+                        <div class="callout-content">
+                            <strong>Tipos:</strong> Vista Auxiliar Principal (VAP) e Vista Auxiliar Secundária (VAS)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.3 Vistas Rotacionadas</h2>
+                    <p>As vistas rotacionadas são usadas para mostrar elementos inclinados em sua posição real, girados 90° em torno de um eixo.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.4 Vistas Parciais</h2>
+                    <p>As vistas parciais representam apenas uma porção limitada da vista, sendo delimitadas por linha ondulada.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.5 Vistas Locais</h2>
+                    <p>As vistas locais são usadas para mostrar detalhes específicos de forma ampliada, como roscas, chanfros ou furos.</p>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa1-tipos-corte/index.html'">‹ SA1: Tipos de Corte</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../sa3-conjuntos/index.html'">Próximo: SA3 — Desenho de Conjuntos ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

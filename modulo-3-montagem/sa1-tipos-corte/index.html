@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 3 - SA1: Tipos de Corte — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Desenho de Montagem</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-03">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 3: Desenho de Montagem</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-tipos-corte/index.html" class="nav-link active">SA1: Tipos de Corte</a></li>
+                    <li><a href="../sa2-vistas-especiais/index.html" class="nav-link">SA2: Vistas Especiais</a></li>
+                    <li><a href="../sa3-conjuntos/index.html" class="nav-link">SA3: Desenho de Conjuntos</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 3: Desenho de Montagem</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA1: Tipos de Corte</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-03-sa1">
+                <h1>Situação de Aprendizagem 1: Tipos de Corte</h1>
+
+                <div class="content-block">
+                    <h2>1.1 O que é Corte?</h2>
+                    <p>O corte é uma convenção gráfica usada para representar a forma interna de uma peça. Consiste em imaginar que a peça foi cortada por um plano e mostrar a vista da superfície de corte.</p>
+                    
+                    <div class="img-container" style="margin: 20px 0; text-align: center;">
+                        <img src="../../assets/fig-cortes.svg" alt="Tipos de Corte e Hachuras ABNT" style="max-width:100%; height:auto;">
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>1.2 Tipos de Corte</h2>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                    <th>Representação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Corte Total</strong></td>
+                                    <td>O objeto é cortado por um único plano, revelando toda a forma interna</td>
+                                    <td>Linha de corte com setas e letras</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Meio-Corte</strong></td>
+                                    <td>Metade do desenho mostra o corte, a outra metade mostra o exterior</td>
+                                    <td>Eixo de simetria como limite</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Corte Parcial</strong></td>
+                                    <td>Usado para revelar detalhes internos em uma pequena área</td>
+                                    <td>Linha ondulada de limitação</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Corte Composto</strong></td>
+                                    <td>Usado mais de um plano de corte para revelar formas internas complexas</td>
+                                    <td>Várias linhas de corte com setas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>1.3 Representação do Corte</h2>
+                    <p>Após o corte, a superfície de corte é identificada por:</p>
+                    <ul>
+                        <li><strong>Linha de corte:</strong> linha tracejada-grossa</li>
+                        <li><strong>Setas:</strong> indicam a direção da projeção</li>
+                        <li><strong>Letras:</strong> identificam o corte (A-A, B-B, etc.)</li>
+                        <li><strong>Linhas de projeção:</strong> ligam as vistas</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>1.4 Seção</h2>
+                    <p>A seção é a representação apenas da superfície de corte, sem mostrar o que está atrás. É usada quando interessa apenas a forma da secção transversal.</p>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../../modulo-2-projecao/avaliacao/index.html'">‹ Módulo 2: Avaliação</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../sa2-vistas-especiais/index.html'">Próximo: SA2 — Vistas Especiais ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>

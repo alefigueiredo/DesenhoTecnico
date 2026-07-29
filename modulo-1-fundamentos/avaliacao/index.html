@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 1 - Avaliação — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Fundamentos do Desenho Técnico</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-01">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 1: Fundamentos</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="#" data-section="mod-01-sa1" class="nav-link">SA1: Definição e Normas</a></li>
+                    <li><a href="#" data-section="mod-01-sa2" class="nav-link">SA2: Diedros e Folhas</a></li>
+                    <li><a href="#" data-section="mod-01-sa3" class="nav-link">SA3: Linhas e Escalas</a></li>
+                    <li><a href="#" data-section="mod-01-sa4" class="nav-link">SA4: Sólidos Geométricos</a></li>
+                    <li><a href="#" data-section="mod-01-exercicios" class="nav-link">Exercícios</a></li>
+                    <li><a href="#" data-section="mod-01-avaliacao" class="nav-link active">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 1: Fundamentos</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Avaliação</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-01-avaliacao">
+                <h1>Avaliação — Módulo 1: Fundamentos</h1>
+
+                <div class="content-block">
+                    <p>Esta avaliação contém 5 questões objetivas sobre os conteúdos do Módulo 1. A nota mínima para aprovação é 70% (4 acertos).</p>
+                    <p><strong>Total de questões:</strong> 5<br><strong>Peso de cada questão:</strong> 2,0 pontos<br><strong>Nota mínima para aprovação:</strong> 7,0</p>
+                </div>
+
+                <div class="exercise" id="ex-m1-av1">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 1</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">1. Assinale a alternativa CORRETA sobre as normas ABNT aplicáveis ao desenho técnico:</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av1" value="a">
+                                <span class="option-letter">A</span>
+                                <span>NBR 8403 define as dimensões das folhas de desenho</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av1" value="b">
+                                <span class="option-letter">B</span>
+                                <span>NBR 10126 estabelece as regras de cotagem em desenho técnico</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av1" value="c">
+                                <span class="option-letter">C</span>
+                                <span>NBR 10067 define os tipos de linhas em desenhos</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-av1" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-av1"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-av2">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 2</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">2. Complete a frase: No Primeiro Diedro, a vista superior é desenhada _______ da vista frontal.</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av2" value="a">
+                                <span class="option-letter">A</span>
+                                <span>acima</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av2" value="b">
+                                <span class="option-letter">B</span>
+                                <span>abaixo</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av2" value="c">
+                                <span class="option-letter">C</span>
+                                <span>ao lado</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-av2" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-av2"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-av3">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 3</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">3. Qual a largura da linha tracejada grossa utilizada para arestas invisíveis?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av3" value="a">
+                                <span class="option-letter">A</span>
+                                <span>0,18 mm</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av3" value="b">
+                                <span class="option-letter">B</span>
+                                <span>0,35 mm</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av3" value="c">
+                                <span class="option-letter">C</span>
+                                <span>0,7 mm</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-av3" data-answer="c">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-av3"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-av4">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 4</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">4. O que é uma escala de ampliação?</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av4" value="a">
+                                <span class="option-letter">A</span>
+                                <span>1:X onde X > 1</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av4" value="b">
+                                <span class="option-letter">B</span>
+                                <span>X:1 onde X > 1</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av4" value="c">
+                                <span class="option-letter">C</span>
+                                <span>1:1</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-av4" data-answer="b">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-av4"></div>
+                    </div>
+                </div>
+
+                <div class="exercise" id="ex-m1-av5">
+                    <div class="exercise-header">
+                        <span class="exercise-number">Questão 5</span>
+                    </div>
+                    <div class="exercise-body">
+                        <p class="exercise-text">5. Complete a frase: A _______ é a irregularidade fina da superfície resultante do processo de usinagem.</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av5" value="a">
+                                <span class="option-letter">A</span>
+                                <span>rugosidade</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av5" value="b">
+                                <span class="option-letter">B</span>
+                                <span>tolerância</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="ex-m1-av5" value="c">
+                                <span class="option-letter">C</span>
+                                <span>escala</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-check" data-exercise="ex-m1-av5" data-answer="a">
+                            Verificar Resposta
+                        </button>
+                        <div class="feedback" id="feedback-ex-m1-av5"></div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Resultados da Avaliação</h2>
+                    <p>Para ver seu resultado, responda todas as questões e clique em "Calcular Nota".</p>
+                    <button class="btn btn-primary" id="btnCalcularNota">Calcular Nota</button>
+                    <div class="callout callout-info" id="divResultado" style="display: none;">
+                        <div class="callout-icon">📊</div>
+                        <div class="callout-content">
+                            <p><strong>Sua nota:</strong> <span id="spnNota"></span>/10,0</p>
+                            <p><strong>Acertos:</strong> <span id="spnAcertos"></span>/5 questões</p>
+                            <p id="spnSituacao"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../exercicios/index.html'">‹ Exercícios Módulo 1</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../../modulo-2-projecao/sa1-croqui-perspectiva/index.html'">Próximo Módulo ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+    <script>
+        document.getElementById('btnCalcularNota').addEventListener('click', function() {
+            var acertos = 0;
+            var total = 5;
+            
+            // Questão 1
+            if (document.querySelector('input[name="ex-m1-av1"]:checked')) {
+                if (document.querySelector('input[name="ex-m1-av1"]:checked').value === 'b') acertos++;
+            }
+            
+            // Questão 2
+            if (document.querySelector('input[name="ex-m1-av2"]:checked')) {
+                if (document.querySelector('input[name="ex-m1-av2"]:checked').value === 'b') acertos++;
+            }
+            
+            // Questão 3
+            if (document.querySelector('input[name="ex-m1-av3"]:checked')) {
+                if (document.querySelector('input[name="ex-m1-av3"]:checked').value === 'c') acertos++;
+            }
+            
+            // Questão 4
+            if (document.querySelector('input[name="ex-m1-av4"]:checked')) {
+                if (document.querySelector('input[name="ex-m1-av4"]:checked').value === 'b') acertos++;
+            }
+            
+            // Questão 5
+            if (document.querySelector('input[name="ex-m1-av5"]:checked')) {
+                if (document.querySelector('input[name="ex-m1-av5"]:checked').value === 'a') acertos++;
+            }
+            
+            var nota = acertos * 2.0;
+            var situacao = nota >= 7.0 ? '✅ Aprovado!' : '❌ Reprovado. Tente novamente!';
+            
+            document.getElementById('spnNota').textContent = nota.toFixed(1);
+            document.getElementById('spnAcertos').textContent = acertos;
+            document.getElementById('spnSituacao').textContent = situacao;
+            document.getElementById('divResultado').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

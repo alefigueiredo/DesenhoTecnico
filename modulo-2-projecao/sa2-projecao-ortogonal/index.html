@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material didático digital — SENAI SP">
+    <title>Módulo 2 - SA2: Projeção Ortogonal — SENAI SP</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="sidebar-header">
+            <div class="course-badge">SENAI</div>
+            <h2 class="course-title">Leitura e Interpretação de Desenho Técnico Mecânico</h2>
+            <p class="course-subtitle">Projeção Ortogonal e Croqui</p>
+        </div>
+
+        <div class="sidebar-progress">
+            <div class="progress-label">
+                <span>Progresso</span>
+                <span id="navProgressText">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="navProgressFill"></div>
+            </div>
+        </div>
+
+        <ul class="nav-list" id="navList">
+            <li class="nav-module">
+                <button class="nav-module-btn" data-module="mod-02">
+                    <span class="nav-icon">📘</span>
+                    <span>Módulo 2: Projeção Ortogonal</span>
+                    <span class="nav-arrow">›</span>
+                </button>
+                <ul class="nav-sections">
+                    <li><a href="../sa1-croqui-perspectiva/index.html" class="nav-link">SA1: Croqui e Perspectiva</a></li>
+                    <li><a href="../sa2-projecao-ortogonal/index.html" class="nav-link active">SA2: Projeção Ortogonal</a></li>
+                    <li><a href="../sa3-cotagem/index.html" class="nav-link">SA3: Cotagem</a></li>
+                    <li><a href="../exercicios/index.html" class="nav-link">Exercícios</a></li>
+                    <li><a href="../avaliacao/index.html" class="nav-link">Avaliação</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p class="sidebar-footer-text">SENAI SP — Material Digital</p>
+        </div>
+    </nav>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content" id="mainContent" role="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <span>Início</span>
+            <span class="breadcrumb-sep">›</span>
+            <span>Módulo 2: Projeção Ortogonal</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">SA2: Projeção Ortogonal</span>
+        </div>
+
+        <div class="content-area" id="contentArea">
+            <section class="content-section active" id="mod-02-sa2">
+                <h1>Situação de Aprendizagem 2: Projeção Ortogonal e Vistas</h1>
+
+                <div class="content-block">
+                    <h2>2.1 Conceito de Projeção Ortogonal</h2>
+                    <p>A projeção ortogonal é um método de representação tridimensional em duas dimensões, onde os raios projetantes são perpendiculares ao plano de projeção.</p>
+                    
+                    <div class="img-container" style="margin: 20px 0; text-align: center;">
+                        <img src="../../assets/fig-projecao-ortogonal.svg" alt="Projeção Ortogonal de 3 Vistas ABNT" style="max-width:100%; height:auto;">
+                    </div>
+
+                    <div class="callout callout-success">
+                        <div class="callout-icon">✅</div>
+                        <div class="callout-content">
+                            <strong>Princípio fundamental:</strong> O objeto é imaginado como "transparente", projetado sobre planos perpendiculares entre si.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.2 Planos de Projeção</h2>
+                    <p>Existem dois planos principais de projeção:</p>
+                    <ul>
+                        <li><strong>Plano Vertical (PV):</strong> onde se projeta a vista frontal</li>
+                        <li><strong>Plano Horizontal (PH):</strong> onde se projeta a vista superior</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.3 Vistas Fundamentais</h2>
+                    <p>As seis vistas fundamentais de um objeto são:</p>
+                    
+                    <div class="table-responsive">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th> Vista</th>
+                                    <th>Plano de Projeção</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Vista Frontal (F)</strong></td>
+                                    <td>Plano Vertical</td>
+                                    <td>Mostra a frente do objeto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vista Superior (C)</strong></td>
+                                    <td>Plano Horizontal</td>
+                                    <td>Mostra o topo do objeto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vista Lateral Esquerda (E)</strong></td>
+                                    <td>Plano Lateral Esquerdo</td>
+                                    <td>Mostra o lado esquerdo do objeto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vista Lateral Direita (D)</strong></td>
+                                    <td>Plano Lateral Direito</td>
+                                    <td>Mostra o lado direito do objeto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vista Posterior (T)</strong></td>
+                                    <td>Plano Vertical Traseiro</td>
+                                    <td>Mostra a traseira do objeto</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vista Inferior (B)</strong></td>
+                                    <td>Plano Horizontal Inferior</td>
+                                    <td>Mostra a base do objeto</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.4 Supressão de Vistas</h2>
+                    <p>Nem sempre são necessárias todas as seis vistas. A supressão de vistas ocorre quando o objeto é simétrico ou quando uma única vista já é suficiente para definir completamente a peça.</p>
+                    
+                    <div class="callout callout-warning">
+                        <div class="callout-icon">⚠️</div>
+                        <div class="callout-content">
+                            <strong>Importante:</strong> O número mínimo de vistas para definir uma peça é uma (vista única), desde que a forma seja claramente identificável.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>2.5 Eixo de Simetria</h2>
+                    <p>O eixo de simetria é representado por linha contínua-fina e permite a supressão de vistas quando o objeto é simetricamente formado.</p>
+                </div>
+
+                <div class="section-nav">
+                    <button class="btn btn-secondary" onclick="window.location.href='../sa1-croqui-perspectiva/index.html'">‹ SA1: Croqui e Perspectiva</button>
+                    <button class="btn btn-primary" onclick="window.location.href='../sa3-cotagem/index.html'">Próximo: SA3 — Cotagem ›</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../../js/app.js"></script>
+</body>
+</html>
